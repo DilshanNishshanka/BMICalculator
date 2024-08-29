@@ -6,7 +6,9 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.systemBarsPadding
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.Button
@@ -19,6 +21,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import com.creative.app.sl.bmicalculator.ui.theme.BMICalculatorTheme
 
 class MainActivity : ComponentActivity() {
@@ -50,6 +53,7 @@ fun BMICalculator(){
         Text(
             text = "BMI Calculator",
         )
+        Spacer(modifier = Modifier.height(16.dp))
         OutlinedTextField(
             value = "Text",
             onValueChange = {},
@@ -60,6 +64,7 @@ fun BMICalculator(){
             },
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number)
         )
+        Spacer(modifier = Modifier.height(16.dp))
         OutlinedTextField(
             value = "Text",
             onValueChange = {},
@@ -70,6 +75,7 @@ fun BMICalculator(){
             },
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number)
         )
+        Spacer(modifier = Modifier.height(16.dp))
         Button(
             onClick = {}
         ){
